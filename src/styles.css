@@ -1,0 +1,273 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+:root {
+  --grid-border: black solid 1px;
+}
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+p {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  color: white;
+}
+.logo {
+  width: 50px;
+  fill: white;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+.mainTitle {
+  font-size: 6em;
+}
+.nameFormDiv {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+#nameInput {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  font-size: 1em;
+  width: 80%;
+}
+.startGameBtn {
+  padding: 0.2em 1em;
+  margin-top: 0.4em;
+  font-size: 1em;
+}
+.shipGrid {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  margin: auto;
+  margin-top: 2em;
+}
+.cell {
+  width: 100%;
+  height: 100%;
+  border-left: var(--grid-border);
+  border-bottom: var(--grid-border);
+}
+.cell:nth-child(10n) {
+  border-right: var(--grid-border);
+}
+.cell:nth-child(-n + 10) {
+  border-top: var(--grid-border);
+}
+.shipGrid ~ button {
+  margin: 10px;
+  padding: 5px 10px;
+}
+.containerDiv {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.hasShip {
+  background-color: yellow;
+}
+.twoBoards {
+  display: flex;
+  gap: 5em;
+}
+.gotHit {
+  background: url("./svg/cross-mark-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.missed {
+  background-color: red;
+}
+dialog {
+  margin: auto;
+  width: 60vw;
+  height: 30vh;
+  border-radius: 10px;
+  background-color: #ffbdc3;
+}
+.playAgainForm {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#playAgainBtn {
+  position: absolute;
+  width: 20%;
+  bottom: 0;
+  right: 0;
+}
+.winAnnounce {
+  font-family: serif;
+  font-size: 5em;
+  font-weight: 800;
+}
