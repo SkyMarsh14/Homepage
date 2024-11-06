@@ -1,11 +1,17 @@
 :root {
-
   --fs-xl: clamp(3.5rem, 10vw + 1rem, 12rem);
   --fs-400: clamp(1rem, 1vw + 1rem, 2rem);
   --fs-600: clamp(2rem, 2vw + 1rem, 2rem);
   --fs-name-banner: clamp(2.5rem, 5vw + 1rem, 7rem);
-  --project-one-image: url("./../img/battleshipProject.jpg");
   --footer-image: url("../img/laptop-on-a-desk.jpg");
+}
+@media (min-width:1300px){
+    :root{
+        --fs-xl:150px;
+        --fs-400:4rem;
+        --fs-600:5rem;
+    }
+
 }
 h1,
 h2,
@@ -60,11 +66,25 @@ div.imageContainer {
   margin-top: 20px;
   margin-bottom: 0;
 }
-.headingContainer{
+.headingContainer {
+  display: flex;
+  align-items: center;
+}
+.projectTitle {
+  margin-right: auto;
+  font-size: var(--fs-600);
+}
+.whoAmI{
+    display:flex;
+    gap:1ch;
+}
+.heading_line2{
+    margin-right:auto;
+}
+.whoAmI>a{
     display:flex;
     align-items: center;
 }
-.projectTitle{
-    margin-right:auto;
-    font-size:var(--fs-600)
+section{
+    padding:1ch;
 }

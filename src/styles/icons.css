@@ -1,19 +1,22 @@
-:root{
-    --linkedIn-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg");
-    --gitHub-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
-    --open-in-new:url('../img/open-in-new.svg');
+:root {
+  --linkedIn-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg");
+  --gitHub-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
+  --open-in-new: url("../img/open-in-new.svg");
+  --project-one-image: url("./../img/battleshipProject.jpg");
+  --project-two-image:url('../img/knightTravails.jpg')
+  
 }
 button.socialLinks:hover {
-    opacity: 0.8;
-  }
-  .headingContainer>a{
-    display:flex;
-    align-items: center;
-  }
+  opacity: 0.8;
+}
+.headingContainer > a {
+  display: flex;
+  align-items: center;
+}
 button.socialLinks {
-    padding:0;
-    height: var(--fs-600);
-    width: var(--fs-600);
+  padding: 0;
+  height: var(--fs-600);
+  width: var(--fs-600);
   background-color: transparent;
   border: none;
   background-size: contain;
@@ -21,16 +24,21 @@ button.socialLinks {
   background-position: center;
 }
 li[data-project-index="1"] .imageContainer {
-    background-image: var(--project-one-image);
-    background-size: cover;
-  }
-  button.open-in-new{
-      background-image:var(--open-in-new);
-      background-size:cover;
-  }
-  button.linkedIn {
-    background-image: var(--linkedIn-image);
-  }
-  button.gitHub {
-    background-image: var(--gitHub-image);
-  }
+  background-image: var(--project-one-image);
+  background-size: cover;
+}
+li[data-project-index="2"] .imageContainer {
+background-image:var(--project-two-image);
+background-size:cover;
+}
+
+button.open-in-new {
+  background-image: var(--open-in-new);
+  background-size: cover;
+}
+button.linkedIn {
+  background-image: var(--linkedIn-image);
+}
+button.gitHub {
+  background-image: var(--gitHub-image);
+}
