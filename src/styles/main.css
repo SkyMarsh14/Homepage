@@ -1,57 +1,70 @@
-:root{
-    --linkedIn-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg");
-    --gitHub-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
+:root {
+
+  --fs-xl: clamp(3.5rem, 10vw + 1rem, 12rem);
+  --fs-400: clamp(1rem, 1vw + 1rem, 2rem);
+  --fs-600: clamp(2rem, 2vw + 1rem, 2rem);
+  --fs-name-banner: clamp(2.5rem, 5vw + 1rem, 7rem);
+  --project-one-image: url("./../img/battleshipProject.jpg");
+  --footer-image: url("../img/laptop-on-a-desk.jpg");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--fs-xl);
+}
+div {
+  font-size: var(--fs-400);
+}
+.heading_line2 {
+  font-size: var(--fs-600);
+}
+.nameBanner > div {
+  font-size: var(--fs-name-banner);
 }
 nav.nameBanner {
-    position: fixed;
-    font-size: 2em;
-    width: 100%;
-    display: flex;
-    background: rgba(255, 255, 255, 0.5);
-    height: 10vh;
+  position: fixed;
+  font-size: var(--fs-600);
+  width: 100%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+section.myName {
+  padding-top: 12vh;
+}
+
+.projectList {
+  list-style-type: none;
+  padding: 20px;
+  display: grid;
+  gap: 2em;
+}
+
+div.imageContainer {
+  background-color: aqua;
+  grid-row: 1;
+  height: 300px;
+}
+.headImg > img {
+  margin: auto;
+}
+.footerImg {
+  height: 80vw;
+  background-image: var(--footer-image);
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.headingContainer{
+    display:flex;
     align-items: center;
-    justify-content: center;
-  }
-  section.myName {
-    padding-top: 15vh;
-  }
-  button.linkedIn {
-    background-image: var(--linkedIn-image)
-  }
-  button.gitHub {
-    background-image: var(--gitHub-image)
-  }
-  
-  button.socialLinks:hover {
-    opacity: 0.8;
-  }
-  button.socialLinks {
-    background-color: transparent;
-    border: none;
-    height: 40px;
-    width: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .projectList {
-    list-style-type: none;
-    padding:20px;
-    display:grid;
-    gap:2em;
-    grid-auto-rows:600px;
-  
-  }
-  div.project {
-      display:grid;
-      height:100%;
-      grid-template-rows:2fr 1fr;
-      gap:2ch;
-  }
-  div.imageContainer{
-      background-color:aqua;
-      width: 100%;
-      height:100%;
-      grid-row:1;
-  }
-  
+}
+.projectTitle{
+    margin-right:auto;
+    font-size:var(--fs-600)
+}
