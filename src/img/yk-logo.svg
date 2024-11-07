@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <!-- Background rectangle -->
+    <rect x="20" y="20" width="160" height="160" fill="#34495e"/>
+    
+    <!-- Letter Y in red -->
+    <path d="M50 50 L80 100 L110 50" stroke="#e74c3c" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M80 100 L80 150" stroke="#e74c3c" stroke-width="12" stroke-linecap="round" fill="none"/>
+    
+    <!-- Letter K in yellow -->
+    <path d="M120 50 L120 150" stroke="#f1c40f" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M120 100 L150 50" stroke="#f1c40f" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M120 100 L150 150" stroke="#f1c40f" stroke-width="12" stroke-linecap="round" fill="none"/>
+</svg>

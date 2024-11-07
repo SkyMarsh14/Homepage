@@ -2,11 +2,10 @@
   --fs-xl: clamp(3.5rem, 8vw + 1rem, 12rem);
   --fs-400: clamp(1rem, 1vw + 1rem, 2.5rem);
   --fs-600: clamp(2rem, 2vw + 1rem, 3rem);
-  --fs-name-banner: clamp(2.5rem, 5vw + 1rem, 7rem);
+  --fs-name-banner: clamp(2rem, 2vw + 1rem, 4rem);
   --fs-800: clamp(3em, 5vw + 1rem, 5rem);
-  --project-card-shadow:
-  0.9px 3px 3px hsl(0deg 0% 0% / 0.47);
-  --project-card-shadow-onhover: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+  --project-card-shadow: 0.9px 3px 3px hsl(0deg 0% 0% / 0.47);
+  --project-card-shadow-onhover: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
 }
 
 h1,
@@ -28,7 +27,7 @@ div {
 }
 nav.nameBanner {
   position: fixed;
-  font-size: var(--fs-600);
+  font-size: var(--fs-400);
   width: 100%;
   display: flex;
   background: rgba(255, 255, 255, 0.5);
@@ -37,7 +36,7 @@ nav.nameBanner {
   justify-content: center;
 }
 section.myName {
-  padding-top: 12vh;
+  padding-top: calc(12vh + 2rem);
 }
 
 .projectList {
@@ -45,6 +44,7 @@ section.myName {
   padding: 20px;
   display: grid;
   gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 div.imageContainer {
@@ -88,12 +88,24 @@ section {
 .hide-shadow {
   box-shadow: none;
 }
-.projectList>li{
-  box-shadow:var(--project-card-shadow);
-  transition:box-shadow 0.2s ease-in-out,transform 0.2s ease-in-out;
+.projectList > li {
+  box-shadow: var(--project-card-shadow);
+  transition:
+    box-shadow 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
 }
-.projectList>li:hover{
-  box-shadow:var(--project-card-shadow-onhover);
-  transform:scale(1.05)
-  
+.projectList > li:hover {
+  box-shadow: var(--project-card-shadow-onhover);
+  transform: scale(1.03);
+}
+
+section.projects{
+    margin:8vh auto;
+}
+section.aboutMe{
+    margin:8vh auto;
+}
+.rightNav{
+  display:flex;
+  margin-left:auto;
 }

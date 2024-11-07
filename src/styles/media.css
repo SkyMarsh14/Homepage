@@ -1,27 +1,24 @@
 @media (min-width: 82em) {
-    .myName{
-        display:grid;
-        grid-template-areas:
-        "banner myName"
-        "banner whoAmI";
-        grid-template-rows:1fr 2fr;
-    }
-    .headImg{
-        grid-area:banner;
-    }
-    .whoAmI{
-        grid-area:whoAmI;
-        align-items: start;
-    }
-    .hiMyName{
-        display:block; 
-        grid-area:myName;
-        align-self: end;
-    }
-    .whoAmI>a{
-        padding-top:5px;
-    }
-    .projectList{
-        grid-template-columns:repeat(auto-fit,minmax(400px,1fr))
-    }
+  .myName {
+    display: grid;
+    grid-template-areas:
+      "banner myName"
+      "banner whoAmI";
+    grid-template-rows: 1fr 2fr;
+  }
+  .headImg {
+    grid-area: banner;
+  }
+  .whoAmI {
+    grid-area: whoAmI;
+    align-items: start;
+  }
+  .hiMyName {
+    display: block;
+    grid-area: myName;
+    align-self: end;
+  }
+  .whoAmI > a {
+    padding-top: 5px;
+  }
 }
