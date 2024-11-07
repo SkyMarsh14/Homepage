@@ -1,75 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yuto's portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="nameBanner fixed">
-        <div>Yuto Konno</div>
+      <div>Yuto Konno</div>
     </nav>
     <section class="myName">
-        <h1 class="hiMyName heading_line1">Hi, I am <span style="color:blue">Yuto</span>.</h1>
-        <div class="heading_line2">I am a full stuck web developer.</div>
-        <a href="https://www.linkedin.com/in/yuto-konno-81b91a2b1/"><button class="linkedIn socialLinks"></button></a>
-        <a href="https://github.com/SkyMarsh14"><button class="gitHub socialLinks"></button></a>
-        <picture class="headImg">
-            <source srcset="./img/guy-working.desktop.jpg" media="(min-width:1300px)">
-            <source srcset="./img/guy-working.table.jpg" media="(min-width:1000px)">
-            <source srcset="./img/guy-working.mobile.jpg" media="(min-width:600px)">
-            <img src="./img/guy-working.desktop.jpg" alt="Yuto working on a desk.">
-        </picture>
+      <h1 class="hiMyName heading_line1">
+        Hi, I am <span style="color: blue">Yuto</span>.
+      </h1>
+      <div class="whoAmI">
+        <div class="heading_line2">I am a full stack web developer.</div>
+        <a href="https://www.linkedin.com/in/yuto-konno-81b91a2b1/"
+          ><button class="linkedIn socialLinks"></button
+        ></a>
+        <a href="https://github.com/SkyMarsh14"
+          ><button class="gitHub socialLinks"></button
+        ></a>
+      </div>
+      <picture class="headImg">
+        <source
+          srcset="./img/guy-working.desktop.jpg"
+          media="(min-width:82em")
+        />
+        <source
+          srcset="./img/guy-working.table.jpg"
+          media="(min-width:63em)"
+        />
+        <source
+          srcset="./img/guy-working.mobile.jpg"
+          media="(min-width:38em)"
+        />
+        <img
+          src="./img/guy-working.desktop.jpg"
+          alt="Yuto working on a desk."
+        />
+      </picture>
     </section>
     <section class="aboutMe">
-        <h2>
-            About me
-        </h2>
-        <div class="about_details">I'm Yuto from Japan. Former medical interpreter at US Army.
-            Started from self-taught developper in Japan, currently a CS student here in Australia.
-        </div>
+      <h2>About me</h2>
+      <div class="about_details">
+        I'm Yuto from Japan. Former medical interpreter at US Army. Started from
+        self-taught developper in Japan, currently a CS student here in
+        Australia.
+      </div>
     </section>
     <section class="projects">
-        <h3>My work</h3>
-        <ul>
-            <li class="project" data-project-index="1">
-                <div class="project">
-                    <div class="imageContainer"></div>
-                    <div class="projectDetail"></div>
-                </div>
-            </li>
-            <li class="project" data-project-index="2">
-                <div class="project">
-                    <div class="imageContainer"></div>
-                    <div class="projectDetail"></div>
-                </div>
-            </li>
-            <li class="project" data-project-index="3">
-                <div class="project">
-                    <div class="imageContainer"></div>
-                    <div class="projectDetail"></div>
-                </div>
-            </li>
-            <li class="project" data-project-index="4">
-                <div class="project">
-                    <div class="imageContainer"></div>
-                    <div class="projectDetail"></div>
-                </div>
-            </li>
-            <li class="project" data-project-index="5">
-                <div class="project">
-                    <div class="imageContainer"></div>
-                    <div class="projectDetail"></div>
-                </div>
-            </li>
-            <li class="project" data-project-index="6">
-                <div class="project">
-                    <div class="imageContainer"></div>
-                    <div class="projectDetail"></div>
-                </div>
-            </li>
-        </ul>
+      <h3>My work</h3>
+      <ul class="projectList">
+        <li data-project-index="1">
+          <div class="project">
+            <img src="./img/battleshipProject.jpg" alt="" />
+            <div class="headingContainer">
+              <div class="projectTitle">Battleship</div>
+              <a href="https://github.com/SkyMarsh14/Battle-Ship"
+                ><button class="gitHub socialLinks"></button
+              ></a>
+              <a href="https://skymarsh14.github.io/Battle-Ship/">
+                <button class="socialLinks open-in-new"></button>
+              </a>
+            </div>
+            <div class="projectDetail">
+              Developed a fully interactive, test-driven Battleship game using
+              JavaScript. The game includes a strategic logic for the computer
+              opponent, allowing it to make effective attacks by leveraging ship
+              placement restrcitions.
+            </div>
+          </div>
+        </li>
+        <li data-project-index="2">
+          <div class="project">
+            <img src="./img/knightTravails.jpg" alt="knightTravails demo" />
+            <div class="headingContainer">
+              <div class="projectTitle">Knight's Travails</div>
+              <a href="https://github.com/SkyMarsh14/Knights-Travails">
+                <button class="socialLinks open-in-new"></button>
+              </a>
+            </div>
+            <div class="projectDetail">
+              Built an algorithm to solve the shortest-path problem for a
+              knight’s movements on a chessboard using search algorithms in
+              JavaScript. This project leverages core algorithmic principles,
+              particularly graph traversal, and applies Depth-First Search (DFS)
+              and Breadth-First Search (BFS) to find optimal paths.
+            </div>
+          </div>
+        </li>
+        <li data-project-index="3">
+          <img src="./img/to-do-list.png" alt="Todo list website" />
+          <div class="headingContainer">
+            <div class="projectTitle">Todo List</div>
+            <a href="https://github.com/SkyMarsh14/todo-list">
+              <button class="socialLinks gitHub"></button>
+            </a>
+            <a href="https://skymarsh14.github.io/todo-list/">
+              <button class="socialLinks open-in-new"></button>
+            </a>
+          </div>
+          <div class="projectDetail">
+            This Todo List project is a modular JavaScript application designed
+            for organizing tasks efficiently. It enables users to create and
+            manage tasks with essential details like title, description, due
+            date, and priority, grouped under different projects. The app also
+            uses Local Storage to persist data across sessions, so users can
+            retrieve their tasks even after a page refresh. Additionally, the
+            date-fns library is used for handling date formatting and
+            manipulation with ease.
+          </div>
+        </li>
+      </ul>
     </section>
-
-</body>
+    <footer class="contactMe">
+      <h4>Contact Me</h4>
+      <div>
+        Please get in touch if you think our work could be mutually beneficial!
+      </div>
+      <div class="email">soras1758@gmail.com</div>
+      <address>
+        <a href="https://www.linkedin.com/in/yuto-konno-81b91a2b1/"
+          ><button class="linkedIn socialLinks"></button
+        ></a>
+        <a href="https://github.com/SkyMarsh14"
+          ><button class="gitHub socialLinks"></button
+        ></a>
+      </address>
+      <img src="./img/laptop-on-a-desk.jpg" alt="laptop on a desk" />
+    </footer>
+  </body>
 </html>

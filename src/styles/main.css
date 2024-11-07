@@ -1,25 +1,21 @@
 :root {
-  --fs-xl: clamp(3.5rem, 10vw + 1rem, 12rem);
-  --fs-400: clamp(1rem, 1vw + 1rem, 2rem);
-  --fs-600: clamp(2rem, 2vw + 1rem, 2rem);
+  --fs-xl: clamp(3.5rem, 8vw + 1rem, 12rem);
+  --fs-400: clamp(1rem, 1vw + 1rem, 2.5rem);
+  --fs-600: clamp(2rem, 2vw + 1rem, 3rem);
   --fs-name-banner: clamp(2.5rem, 5vw + 1rem, 7rem);
-  --footer-image: url("../img/laptop-on-a-desk.jpg");
+  --fs-800: clamp(3em, 5vw + 1rem, 5rem);
+  --project-card-shadow:
+  0.9px 3px 3px hsl(0deg 0% 0% / 0.47);
+  --project-card-shadow-onhover: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
 }
-@media (min-width:1300px){
-    :root{
-        --fs-xl:150px;
-        --fs-400:4rem;
-        --fs-600:5rem;
-    }
 
-}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-size: var(--fs-xl);
+  font-size: var(--fs-800);
 }
 div {
   font-size: var(--fs-400);
@@ -52,19 +48,10 @@ section.myName {
 }
 
 div.imageContainer {
-  background-color: aqua;
-  grid-row: 1;
   height: 300px;
 }
 .headImg > img {
   margin: auto;
-}
-.footerImg {
-  height: 80vw;
-  background-image: var(--footer-image);
-  background-size: cover;
-  margin-top: 20px;
-  margin-bottom: 0;
 }
 .headingContainer {
   display: flex;
@@ -74,17 +61,39 @@ div.imageContainer {
   margin-right: auto;
   font-size: var(--fs-600);
 }
-.whoAmI{
-    display:flex;
-    gap:1ch;
+.whoAmI {
+  display: flex;
+  gap: 1ch;
 }
-.heading_line2{
-    margin-right:auto;
+.heading_line2 {
+  margin-right: auto;
 }
-.whoAmI>a{
-    display:flex;
-    align-items: center;
+.whoAmI > a {
+  display: flex;
+  align-items: center;
 }
-section{
-    padding:1ch;
+section {
+  padding: 1ch;
+}
+.nameBanner > div {
+  font-weight: 800;
+}
+.contactMe {
+  padding: 1ch;
+}
+.nameBanner {
+  box-shadow: 0 5vh 30vh rgba(0, 0, 0, 0.15); /* Shadow effect */
+}
+
+.hide-shadow {
+  box-shadow: none;
+}
+.projectList>li{
+  box-shadow:var(--project-card-shadow);
+  transition:box-shadow 0.2s ease-in-out,transform 0.2s ease-in-out;
+}
+.projectList>li:hover{
+  box-shadow:var(--project-card-shadow-onhover);
+  transform:scale(1.05)
+  
 }
