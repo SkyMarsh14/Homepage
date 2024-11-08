@@ -3,6 +3,7 @@
   --gitHub-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
   --open-in-new: url("../img/open-in-new.svg");
   --yk-logo:url('../img/yk-logo.svg');
+  --banner-logo-size:clamp(3ch, 5ch + 1rem , 7ch);
 }
 button.socialLinks:hover {
   opacity: 0.8;
@@ -36,7 +37,6 @@ button.gitHub {
 }
 button.myLogo{
   background-image:var(--yk-logo);
-  height:clamp(3ch, 5ch + 1rem , 7ch);
-  width:clamp(3ch, 5ch + 1rem , 7ch);
-
+  height:var(--banner-logo-size);
+  width:var(--banner-logo-size);
 }

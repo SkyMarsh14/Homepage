@@ -1,11 +1,21 @@
 :root {
-  --fs-xl: clamp(3.5rem, 8vw + 1rem, 12rem);
-  --fs-400: clamp(1rem, 1vw + 1rem, 2.5rem);
-  --fs-600: clamp(2rem, 2vw + 1rem, 3rem);
-  --fs-name-banner: clamp(2rem, 2vw + 1rem, 4rem);
-  --fs-800: clamp(3em, 5vw + 1rem, 5rem);
+  --fs-xl: 40px;
+  --fs-400: 16px;
+  --fs-name-banner:18px;
+  --fs-800: 28px;
   --project-card-shadow: 0.9px 3px 3px hsl(0deg 0% 0% / 0.47);
   --project-card-shadow-onhover: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
+}
+@media (min-width:1000px){
+  :root{
+    --fs-xl:50px;
+    --fs-400:18px;
+    --fs-name-banner:24px;
+    --fs-800:35px;
+  }
+.rightNav{
+  display:flex;
+}
 }
 
 h1,
@@ -44,7 +54,7 @@ section.myName {
   padding: 20px;
   display: grid;
   gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 div.imageContainer {
@@ -105,7 +115,8 @@ section.projects{
 section.aboutMe{
     margin:8vh auto;
 }
-.rightNav{
-  display:flex;
-  margin-left:auto;
+
+
+.myLogo{
+  margin-right:auto;
 }
