@@ -1,21 +1,21 @@
 :root {
   --fs-xl: 40px;
   --fs-400: 16px;
-  --fs-name-banner:18px;
+  --fs-name-banner: 18px;
   --fs-800: 28px;
   --project-card-shadow: 0.9px 3px 3px hsl(0deg 0% 0% / 0.47);
   --project-card-shadow-onhover: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
 }
-@media (min-width:1000px){
-  :root{
-    --fs-xl:50px;
-    --fs-400:18px;
-    --fs-name-banner:24px;
-    --fs-800:35px;
+@media (min-width: 1000px) {
+  :root {
+    --fs-xl: 50px;
+    --fs-400: 18px;
+    --fs-name-banner: 24px;
+    --fs-800: 35px;
   }
-.rightNav{
-  display:flex;
-}
+  .rightNav {
+    display: flex;
+  }
 }
 
 h1,
@@ -37,6 +37,7 @@ div {
 }
 nav.nameBanner {
   position: fixed;
+  top: 0;
   font-size: var(--fs-400);
   width: 100%;
   display: flex;
@@ -44,9 +45,6 @@ nav.nameBanner {
   padding: 0.5rem;
   align-items: center;
   justify-content: center;
-}
-section.myName {
-  padding-top: calc(12vh + 2rem);
 }
 
 .projectList {
@@ -61,7 +59,10 @@ div.imageContainer {
   height: 300px;
 }
 .headImg > img {
-  margin: auto;
+  width:70%;
+  max-width:400px;
+  height:auto;
+  margin:auto;
 }
 .headingContainer {
   display: flex;
@@ -71,16 +72,8 @@ div.imageContainer {
   margin-right: auto;
   font-size: var(--fs-600);
 }
-.whoAmI {
-  display: flex;
-  gap: 1ch;
-}
 .heading_line2 {
   margin-right: auto;
-}
-.whoAmI > a {
-  display: flex;
-  align-items: center;
 }
 section {
   padding: 1ch;
@@ -109,14 +102,16 @@ section {
   transform: scale(1.03);
 }
 
-section.projects{
-    margin:8vh auto;
+section.projects {
+  margin: 8vh auto;
 }
-section.aboutMe{
-    margin:8vh auto;
+section.aboutMe {
+  margin: 8vh auto;
 }
 
-
-.myLogo{
-  margin-right:auto;
+.myLogo {
+  margin-right: auto;
+}
+.rightNav{
+  display:none;
 }
