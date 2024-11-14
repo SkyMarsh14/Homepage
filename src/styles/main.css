@@ -59,10 +59,10 @@ div.imageContainer {
   height: 300px;
 }
 .headImg > img {
-  width:70%;
-  max-width:400px;
-  height:auto;
-  margin:auto;
+  width: 70%;
+  max-width: 400px;
+  height: auto;
+  margin: auto;
 }
 .headingContainer {
   display: flex;
@@ -112,6 +112,6 @@ section.aboutMe {
 .myLogo {
   margin-right: auto;
 }
-.rightNav{
-  display:none;
+.rightNav {
+  display: none;
 }

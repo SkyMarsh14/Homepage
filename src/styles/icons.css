@@ -3,12 +3,17 @@
   --gitHub-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
   --open-in-new: url("../img/open-in-new.svg");
   --yk-logo: url("../img/yk-logo.svg");
-  --menu-icon:url('../img/menu.svg');
+  --menu-icon: url("../img/menu.svg");
   --banner-logo-size: clamp(3ch, 5ch + 1rem, 7ch);
-  --icon-size:20px;
+  --icon-size: 20px;
 }
-.menuIcon{
-  background-image:var(--icon)
+.menuIcon.icon {
+  background-image: var(--menu-icon);
+  width: var(--banner-logo-size);
+  height: var(--banner-logo-size);
+}
+.menuIcon {
+  display:block; 
 }
 button.icon:hover {
   opacity: 0.8;
@@ -18,7 +23,6 @@ button.icon:hover {
   align-items: center;
 }
 button.icon {
-
   padding: 0;
   height: var(--icon-size);
   width: var(--icon-size);
@@ -45,4 +49,18 @@ button.myLogo {
   background-image: var(--yk-logo);
   height: var(--banner-logo-size);
   width: var(--banner-logo-size);
+  align-self:flex-start;
+}
+.dropdown-content{
+  display:none;
+}
+.dropdown-content.visible{
+  display:flex;
+  flex-direction: column;
+  font-size:var(--fs-800);
+  width:100px;
+  position:relative;
+}
+.menuIcon{
+  margin-left:auto;
 }

@@ -1,5 +1,8 @@
-@media (min-width:45em) {
-  .rightNav{
-    display:flex;
+@media (min-width: 45em) {
+  .rightNav {
+    display: flex;
+  }
+  .menuIcon {
+    display: none;
   }
 }
