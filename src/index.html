@@ -7,27 +7,19 @@
   </head>
   <body>
     <nav class="nameBanner fixed">
-      <button class="myLogo socialLinks"></button>
-      <div class="rightNav">
+      <button class="myLogo icon"></button>
+      <div class="dropdown">
+        <button class="menuIcon icon"></button>
+        <div class="dropdown-content">
+          <a href="#section-1">About</a><a href="#section-2">My Work</a><a href="#section-3">Contact</a>
+        </div>
+      </div>
+      <div  class="rightNav">
         <button>About</button>
         <button>My work</button>
-        <button>Contact</button>
-        <button>Resume</button>
-      </div>
+        <button>Contact</button> <button>Resume</button> </div>
     </nav>
-    <section class="myName">
-      <h1 class="hiMyName heading_line1">
-        Hi, my name is <span style="color: blue">Yuto</span>.
-      </h1>
-      <div class="whoAmI">
-        <div class="heading_line2">I am a full stack web developer.</div>
-        <a href="https://www.linkedin.com/in/yuto-konno-81b91a2b1/"
-          ><button class="linkedIn socialLinks"></button
-        ></a>
-        <a href="https://github.com/SkyMarsh14"
-          ><button class="gitHub socialLinks"></button
-        ></a>
-      </div>
+    <section id='section-1' class="aboutMe">
       <picture class="headImg">
         <source
           srcset="./img/guy-working.desktop.jpg"
@@ -44,16 +36,23 @@
           alt="Yuto working on a desk."
         />
       </picture>
-    </section>
-    <section class="aboutMe">
       <h2>About me</h2>
       <div class="about_details">
-        I'm Yuto from Japan, a former medical interpreter with the U.S. Army. I
-        started as a self-taught developer in Japan and am currently pursuing a
-        master's degree in Information Technology here in Australia.
+        I'm Yuto from Japan, a former U.S. Army medical interpreter now studying
+        IT in Australia. I began as a self-taught developer in Japan, gaining
+        skills in web development and tech. Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Quod incidunt eligendi voluptates id quam!
+        Quas hic impedit perspiciatis, suscipit maxime in magnam officiis
+        eligendi. Libero sint minima et facilis delectus.
       </div>
+      <a href="https://www.linkedin.com/in/yuto-konno-81b91a2b1/"
+        ><button class="linkedIn icon"></button
+      ></a>
+      <a href="https://github.com/SkyMarsh14"
+        ><button class="gitHub icon"></button
+      ></a>
     </section>
-    <section class="projects">
+    <section id="section-2" class="projects">
       <h3>My work</h3>
       <ul class="projectList">
         <li data-project-index="1">
@@ -62,10 +61,10 @@
             <div class="headingContainer">
               <div class="projectTitle">Battleship</div>
               <a href="https://github.com/SkyMarsh14/Battle-Ship"
-                ><button class="gitHub socialLinks"></button
+                ><button class="gitHub icon"></button
               ></a>
               <a href="https://skymarsh14.github.io/Battle-Ship/">
-                <button class="socialLinks open-in-new"></button>
+                <button class="icon open-in-new"></button>
               </a>
             </div>
             <div class="projectDetail">
@@ -82,7 +81,7 @@
             <div class="headingContainer">
               <div class="projectTitle">Knight's Travails</div>
               <a href="https://github.com/SkyMarsh14/Knights-Travails">
-                <button class="socialLinks open-in-new"></button>
+                <button class="icon open-in-new"></button>
               </a>
             </div>
             <div class="projectDetail">
@@ -99,10 +98,10 @@
           <div class="headingContainer">
             <div class="projectTitle">Todo List</div>
             <a href="https://github.com/SkyMarsh14/todo-list">
-              <button class="socialLinks gitHub"></button>
+              <button class="icon gitHub"></button>
             </a>
             <a href="https://skymarsh14.github.io/todo-list/">
-              <button class="socialLinks open-in-new"></button>
+              <button class="icon open-in-new"></button>
             </a>
           </div>
           <div class="projectDetail">
@@ -118,7 +117,7 @@
         </li>
       </ul>
     </section>
-    <footer class="contactMe">
+    <footer id='section-3'class="contactMe">
       <h4>Contact Me</h4>
       <div>
         Please get in touch if you think our work could be mutually beneficial!
@@ -126,10 +125,10 @@
       <div class="email">soras1758@gmail.com</div>
       <address>
         <a href="https://www.linkedin.com/in/yuto-konno-81b91a2b1/"
-          ><button class="linkedIn socialLinks"></button
+          ><button class="linkedIn icon"></button
         ></a>
         <a href="https://github.com/SkyMarsh14"
-          ><button class="gitHub socialLinks"></button
+          ><button class="gitHub icon"></button
         ></a>
       </address>
       <img src="./img/laptop-on-a-desk.jpg" alt="laptop on a desk" />
