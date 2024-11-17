@@ -5,4 +5,20 @@
   .menuIcon {
     display: none;
   }
+  .email::before {
+    content: var(--email-logo);
+    width: var(--icon-size);
+    display: inline-block;
+    line-height: var(--icon-size);
+    position: relative;
+    bottom: -5px;
+  }
+  .tel::before {
+    content: var(--phone-logo);
+    width: var(--icon-size);
+    display: inline-block;
+    line-height: var(--icon-size);
+    position: relative;
+    bottom: -5px;
+  }
 }

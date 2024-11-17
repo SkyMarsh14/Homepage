@@ -2,15 +2,19 @@
   --linkedIn-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg");
   --gitHub-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg");
   --open-in-new: url("../img/open-in-new.svg");
+  --twitter-logo: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg");
+  --email-logo: url("../img/email-outline.svg");
   --yk-logo: url("../img/yk-logo.svg");
+  --phone-logo: url("../img/phone.svg");
   --menu-icon: url("../img/menu.svg");
   --banner-logo-size: clamp(3ch, 5ch + 1rem, 7ch);
-  --icon-size: 20px;
+  --icon-size: 35px;
 }
 .menuIcon.icon {
   background-image: var(--menu-icon);
   width: var(--banner-logo-size);
   height: var(--banner-logo-size);
+  justify-self: end;
 }
 .menuIcon {
   display: block;
@@ -44,6 +48,9 @@ button.linkedIn {
 }
 button.gitHub {
   background-image: var(--gitHub-image);
+}
+.twitter {
+  background-image: var(--twitter-logo);
 }
 button.myLogo {
   background-image: var(--yk-logo);

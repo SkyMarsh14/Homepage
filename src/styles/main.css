@@ -6,6 +6,10 @@
   --project-card-shadow: 0.9px 3px 3px hsl(0deg 0% 0% / 0.47);
   --project-card-shadow-onhover: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
   --header-bg: #0891b2;
+  --title-font: "Playfair Display", serif;
+}
+body{
+  font-family: "Robot", sans-serif;
 }
 @media (min-width: 1000px) {
   :root {
@@ -26,6 +30,7 @@ h4,
 h5,
 h6 {
   font-size: var(--fs-800);
+  font-family: var(--title-font);
 }
 div {
   font-size: var(--fs-400);
@@ -123,17 +128,32 @@ section.aboutMe {
   display: block;
   position: absolute;
   z-index: -1;
-  transform: translateY(-50%)skewY(-25deg);
+  transform: translateY(-50%) skewY(-25deg);
 }
-#section-3{
-background-color: var(--header-bg);
-color:white;
-padding:1ch;
-position:relative;
+#section-3 {
+  background-color: var(--header-bg);
+  color: white;
+  padding: 1ch;
+  position: relative;
 }
-footer>h4{
+footer > h4 {
   text-align: center;
 }
-footer>img{
-  width:calc(100vw+1ch*2)
+footer > img {
+  width: calc(100vw+1ch * 2);
+}
+.header-social {
+  display: flex;
+  justify-content: center;
+  padding-top: 2ch;
+  gap: 2ch;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  padding-top: 2ch;
+  gap: 2ch;
+}
+.dropdown-content{
+  font-family:var(--title-font)
 }
