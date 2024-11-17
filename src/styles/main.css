@@ -5,6 +5,7 @@
   --fs-800: 28px;
   --project-card-shadow: 0.9px 3px 3px hsl(0deg 0% 0% / 0.47);
   --project-card-shadow-onhover: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
+  --header-bg: #0891b2;
 }
 @media (min-width: 1000px) {
   :root {
@@ -59,7 +60,7 @@ div.imageContainer {
   height: 300px;
 }
 .headImg > img {
-  width: 70%;
+  width: 85%;
   max-width: 400px;
   height: auto;
   margin: auto;
@@ -80,9 +81,6 @@ section {
 }
 .nameBanner > div {
   font-weight: 800;
-}
-.contactMe {
-  padding: 1ch;
 }
 .nameBanner {
   box-shadow: 0 5vh 30vh rgba(0, 0, 0, 0.15); /* Shadow effect */
@@ -114,4 +112,28 @@ section.aboutMe {
 }
 .rightNav {
   display: none;
+}
+#header-background {
+  content: "";
+  padding: 0;
+  top: 0;
+  width: 100vw;
+  background-color: var(--header-bg);
+  height: 100vh;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  transform: translateY(-50%)skewY(-25deg);
+}
+#section-3{
+background-color: var(--header-bg);
+color:white;
+padding:1ch;
+position:relative;
+}
+footer>h4{
+  text-align: center;
+}
+footer>img{
+  width:calc(100vw+1ch*2)
 }

@@ -13,7 +13,7 @@
   height: var(--banner-logo-size);
 }
 .menuIcon {
-  display:block; 
+  display: block;
 }
 button.icon:hover {
   opacity: 0.8;
@@ -49,23 +49,19 @@ button.myLogo {
   background-image: var(--yk-logo);
   height: var(--banner-logo-size);
   width: var(--banner-logo-size);
-  align-self:flex-start;
+  align-self: flex-start;
 }
-.dropdown-content{
-  display:none;
+.dropdown-content {
+  display: none;
 }
-
 
 .menuIcon {
   margin-left: auto;
 }
 
-
-
 .menuIcon {
   margin-left: auto;
 }
-
 
 .menuIcon {
   margin-left: auto;
